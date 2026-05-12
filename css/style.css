@@ -1,4 +1,147 @@
-/* FINAL MOBILE FIX */
+/*NAVBAR */
+
+.custom-navbar{
+    background-color: #f1f6f0;
+    padding: 14px 0;
+    border-bottom: 1px solid #e9ecef;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-link{
+    position: relative;
+    font-weight: 500;
+}
+
+/* Underline Animation */
+
+.nav-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #198754;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.nav-link.active::after{
+    width: 100%;
+}
+
+/*HERO SECTION */
+
+.hero{
+    background-color: #f8f9fa;
+}
+
+.hero h1{
+    max-width: 500px;
+    line-height: 1.2;
+}
+
+.hero p{
+    color: #666;
+}
+
+.hero .btn{
+    padding: 12px 28px;
+    border-radius: 8px;
+}
+
+/* Hero Slider */
+
+#heroSlider img{
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/*WHAT WE DO*/
+
+.what-we-do{
+    background-color: #ffffff;
+}
+
+.work-card{
+    background-color: #f8f9fa;
+    border-radius: 14px;
+    padding: 35px 25px;
+    transition: 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.work-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.work-card i{
+    font-size: 50px;
+}
+
+.work-card h4{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.work-card p{
+    color: #666;
+    line-height: 1.7;
+}
+
+/*FOCUS AREA CARDS*/
+
+.card{
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card img{
+    height: 200px;
+    object-fit: cover;
+}
+
+/*GRANT SECTION */
+
+.grant-section img{
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/*COMMUNITY SLIDER */
+
+.carousel img{
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #1f1f1f;
+}
+
+footer p{
+    color: #ccc;
+}
+
+
+   /*FINAL MOBILE FIX*/
+
 
 @media(max-width:768px){
 
@@ -20,6 +163,7 @@
 
     .navbar-nav{
         width: 100%;
+        margin-top: 10px;
     }
 
     .nav-item{
@@ -36,49 +180,55 @@
         border-bottom: 1px solid #f1f1f1;
     }
 
+    .nav-link::after{
+        display: none;
+    }
+
     /* Hero */
 
     .hero{
-        min-height: auto;
-        padding-top: 50px;
-        padding-bottom: 50px;
         text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .hero h1{
-        font-size: 30px;
-        line-height: 1.3;
+        font-size: 32px;
+        max-width: 100%;
     }
 
     .hero p{
         font-size: 16px;
     }
 
-    .hero .btn{
-        margin-top: 10px;
-    }
-
     .hero img{
         margin-top: 30px;
-        width: 100%;
     }
 
-    /* Row spacing */
+    #heroSlider img{
+        height: 250px;
+    }
 
-    .row{
-        row-gap: 25px;
+    /* Sections */
+
+    section{
+        padding: 70px 0;
     }
 
     /* Cards */
 
     .card{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
-    /* Text overflow */
+    .work-card{
+        margin-bottom: 20px;
+    }
 
-    h1,h2,h3,h4,h5,p,a{
-        word-break: break-word;
+    /* Community Slider */
+
+    .carousel img{
+        height: 250px;
     }
 
     /* Footer */
