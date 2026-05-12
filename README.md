@@ -32,8 +32,6 @@ project-folder/
 ├── css/
 │ └── style.css
 ├── images/
-├── js/
-
 ## How To Run
 
 1. Download or clone the repository
