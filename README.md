@@ -1,8 +1,17 @@
-# Adhishrihaan Clone
+
+# Adhishrihaan  Clone
+
+A responsive homepage replica built using HTML, CSS and Bootstrap 5.
+
+## Live Demo
+
+https://adhishrihaan-clone.vercel.app/
+
+## GitHub Repository
+
+https://github.com/wwwhimanshumaurya29-afk/adhishrihaan-clone
 
 
-
-A responsive homepage clone of the Adhishrihaan Foundation website created using HTML, CSS, Bootstrap 5 and Bootstrap Icons.
 ##images
 │<img width="800" alt="Screenshot (146)" src="https://github.com/user-attachments/assets/f143a71d-8e83-4760-ad26-e123fa89180d" />
 <img width="800"  alt="Screenshot (147)" src="https://github.com/user-attachments/assets/b1f7154f-0016-48e8-9175-46d3b5db8203" />
